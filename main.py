@@ -1,18 +1,10 @@
 from random import *
 
-
 class Rnumber:
-    def __init__(self,minnum,maxnum, amount):
-        self.minnum = minnum
-        self.maxnum = maxnum
-        self.amount = amount
+    def __init__(self, something = 1):
+        self.something = something
 
-
-    def randomNumber(self, minnum = None, maxnum = None, amount = None):
-        if minnum == None:
-            minnum = self.minnum
-            maxnum = self.maxnum
-            amount = self.amount
+    def randomNumber(self, minnum, maxnum, amount):
         x = amount
         while x > 0:
             r = random()
@@ -22,11 +14,9 @@ class Rnumber:
             x = x - 1
 
 
-a = Rnumber(4, 16, 2)
+a = Rnumber()
 
-a.randomNumber()
-
-
+a.randomNumber(4, 16, 3)
 
 
 
